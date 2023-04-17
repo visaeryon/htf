@@ -32,6 +32,6 @@ YellowHighlight-4
 
 - run the extr.exe along with the pdf file you want to extract the highlights from example
 ```
-$ extr.exe test.pdf
+extr.exe test.pdf
 ```
 assuming the pdf name is test.pdf and it is in the same directory as the .exe is in
