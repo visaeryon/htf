@@ -2,6 +2,7 @@
 
 - this is for a niche use case, ofcourse you are free to alter it to suit yours.
 - this flashcard is intended to be used with Obsidian SpacedRepetition plugin.
+- use the releases to get a copy, don't clone the repository, it contains no code.
 
 ## WHAT CAN IT DO
 
@@ -17,7 +18,7 @@ GreenHighlight-1
 YellowHighlight-1
 YellowHighlight-2
 ---
-GreenHighlight-2
+GreenHighlight-2 GreenHighlight-5
 ?
 YellowHighlight-3
 YellowHighlight-4
@@ -26,7 +27,7 @@ YellowHighlight-4
 ## LIMITATIONS
 - YellowHighlights that follows GreenHighlight-1 will be considered as the answers for the GreenHighlights-1 until GreenHighlight-2 was found.
 - The order of execution is same as the order in which it is highlighted originally.
-- Questions can't be of multiple hihglights, even if it is in the same line, that is one big non-split green highlight is required.
+- ~~Questions can't be of multiple hihglights, even if it is in the same line, that is one big non-split green highlight is required.~~
 
 ## HOW TO USE
 
