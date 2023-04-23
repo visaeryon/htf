@@ -15,7 +15,7 @@ GreenHighlight-1
 YellowHighlight-1
 YellowHighlight-2
 ---
-GreenHighlight-2 GreenHighlight-5
+GreenHighlight-2 GreenHighlight-3
 ?
 YellowHighlight-3
 YellowHighlight-4
@@ -26,9 +26,13 @@ YellowHighlight-4
 - YellowHighlights that follows GreenHighlight-1 will be considered as the answers for the GreenHighlights-1 until GreenHighlight-2 was found.
 - Successive GreenHighlights will be considered as the same question, ie., there must be atleast a YellowHighlight between two GreenHighlights for them to be considered different questions.
 
-## HOW to use
+## How to use
 - run the htf.exe along with the pdf file you want to extract the highlights from example
 ```
 htf.exe test.pdf
+```
+or
+```
+htf.py test.pdf
 ```
 assuming the pdf name is test.pdf and it is in the same directory as the .exe is in
