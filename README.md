@@ -1,7 +1,7 @@
 # Highlights_to_Flashcards
 - this is for a niche use case, ofcourse you are free to alter it to suit yours.
 - this flashcard is intended to be used with Obsidian SpacedRepetition plugin.
-- use the releases to get a copy, don't clone the repository, it contains no code.
+- if you don't want to be bothered with dependencies and requirements, use the releases to get a copy.
 
 ## What can it do
 - it will take a pdf that is annotated with green and yellow highlighter as input and will output a "%d-%m-%Y.md" file
