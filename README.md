@@ -22,9 +22,9 @@ YellowHighlight-4
 ```
 
 ## Limitations
+- The order of resulting flashcard is same as the order in which the highlights are done originally, not in the order of their appearance in a pdf.
 - YellowHighlights that follows GreenHighlight-1 will be considered as the answers for the GreenHighlights-1 until GreenHighlight-2 was found.
-- The order of execution is same as the order in which it is highlighted originally, not in the order of appearance.
-- ~~Questions can't be of multiple hihglights, even if it is in the same line, that is one big non-split green highlight is required.~~
+- Successive GreenHighlights will be considered as the same question, ie., there must be atleast a YellowHighlight between two GreenHighlights for them to be considered different questions.
 
 ## HOW to use
 - run the htf.exe along with the pdf file you want to extract the highlights from example
