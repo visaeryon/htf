@@ -4,30 +4,30 @@
 - if you don't want to be bothered with dependencies and requirements, use the releases to get a copy.
 
 ## What can it do
-- it will take a pdf that is annotated with green and yellow highlighter as input and will output a "%d-%m-%Y.md" file
-- green_highlights => questions
-- yellow_highlights => answers
+- it will take a pdf that is annotated with green underline and yellow highlight as input and will output a "%d-%m-%Y.md" file
+- YellowHighlights => questions
+- GreenUnderline => answers
 
 ## Flashcard Format
 ```
-### GreenHighlight-1
+### YellowHighlight-1
 ?
-- YellowHighlight-1
-- YellowHighlight-2
+- GreenUnderline-1
+- GreenUnderline-2
 
 ---
 
-### GreenHighlight-2 GreenHighlight-3
+### YellowHighlight-2 YellowHighlight-3
 ?
-- YellowHighlight-3
-- YellowHighlight-4
+- GreenUnderline-3
+- GreenUnderline-4
 ```
 
 ## Limitations
 - The order of resulting flashcard is same as the order in which the highlights are done originally, not in the order of their appearance in a pdf.
-- YellowHighlights that follows GreenHighlight-1 will be considered as the answers for the GreenHighlights-1 until GreenHighlight-2 was found.
-- Successive GreenHighlights will be considered as the same question, ie., there must be atleast a YellowHighlight between two GreenHighlights for them to be considered different questions.
-- line breaks among the same YellowHighlight will be considered two different highlights.
+- GreenUnderline that follows YellowHighlight-1 will be considered as the answers for the YellowHighlight-1 until YellowHighlight-2 was found.
+- Successive YellowHighlights will be considered as the same question, ie., there must be atleast a GreenUnderline between two YellowHighlights for them to be considered different questions.
+- line breaks among the same GreenUnderline will be considered two different Underlines.
 
 ## How to use
 - run the htf.exe along with the pdf file you want to extract the highlights from example
