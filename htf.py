@@ -11,9 +11,10 @@ colors = []
 
 def format_flashcards(data: List[Dict[str, str]]) -> List[str]:
     current_heading = ""
+    current_content = ""
     output = ""
     for item in data:
-        if item["color"] == (0.0,1.0,0.0):
+        if item["color"] == (1.0,1.0,0.0):
             if current_heading == "":
                 current_heading = "\n---\n\n" + "# " + item["text"]
             else:
@@ -31,7 +32,7 @@ def format_flashcards(data: List[Dict[str, str]]) -> List[str]:
 for page in doc:
     annot = page.first_annot
     while annot:
-        if annot.type[0] == 8:
+        if annot.type[0] == 8 or 9:
             all_coordinates = annot.vertices
             all_words = page.get_text("words")
             if len(all_coordinates) == 4:   
@@ -57,5 +58,5 @@ out = format_flashcards(nine)
 now = datetime.datetime.now()
 date_str = now.strftime("%d-%m-%Y")
 
-with open(f'{date_str}.md', 'w') as f:
+with open(f'{date_str}.md', 'w', encoding="utf-8") as f:
     f.write(out)
